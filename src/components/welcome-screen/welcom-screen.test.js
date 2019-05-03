@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import {WelcomeScreen} from "./welcome-screen";
+import {WelcomeScreen} from './welcome-screen.jsx';
 
 describe(`welcome screen correctly renders`, () => {
   test(`renders with default props`, () => {
