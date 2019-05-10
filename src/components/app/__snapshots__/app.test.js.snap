@@ -16,6 +16,7 @@ exports[`App correctly renders after relaunch should correctly render 1`] = `
   </div>
   <button
     className="welcome__button"
+    onClick={[Function]}
   >
     <span
       className="visually-hidden"
@@ -38,12 +39,12 @@ exports[`App correctly renders after relaunch should correctly render 1`] = `
   >
     <li>
       За 
-      7
+      5
        минут нужно ответить на все вопросы.
     </li>
     <li>
       Можно допустить 
-      4
+      3
        ошибки.
     </li>
   </ul>
