@@ -13,3 +13,9 @@ export const AppSreenType = {
   ARTIST: `game--artist`,
   GENRE: `game--genre`,
 };
+
+export const PlayButtonText = {
+  PLAY: `play`,
+  PAUSE: `pause`
+};
+

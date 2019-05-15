@@ -54,7 +54,7 @@ export class App extends PureComponent {
     }
 
     return (
-      <section className={`game ${QuestionType.ARTIST}`}>
+      <section className={`game game--${QuestionType.ARTIST}`}>
         {this._getScreen(questions[question], buttonClickHandler)}
       </section>
     );
