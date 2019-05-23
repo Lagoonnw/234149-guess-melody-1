@@ -57,7 +57,7 @@ export class QuestionGenreScreen extends PureComponent {
     this.setState({activePlayer: active === this.state.activePlayer ? null : active});
   }
 
-  _submitHandler(evt){
+  _submitHandler(evt) {
     evt.preventDefault();
     this.props.onAnswer();
   }

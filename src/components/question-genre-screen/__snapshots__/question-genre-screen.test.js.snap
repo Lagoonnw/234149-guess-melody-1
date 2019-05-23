@@ -90,14 +90,23 @@ Array [
       <div
         className="track"
       >
-        <button
-          className="track__button track__button--play"
-          type="button"
-        />
         <div
-          className="track__status"
+          className="game__track"
         >
-          <audio />
+          <button
+            className="track__button track__button--play"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          />
+          <div
+            className="track__status"
+          >
+            <audio
+              controls={false}
+              src="test.mp3"
+            />
+          </div>
         </div>
         <div
           className="game__answer"
@@ -120,14 +129,23 @@ Array [
       <div
         className="track"
       >
-        <button
-          className="track__button track__button--play"
-          type="button"
-        />
         <div
-          className="track__status"
+          className="game__track"
         >
-          <audio />
+          <button
+            className="track__button track__button--play"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          />
+          <div
+            className="track__status"
+          >
+            <audio
+              controls={false}
+              src="test.mp3"
+            />
+          </div>
         </div>
         <div
           className="game__answer"
@@ -150,14 +168,23 @@ Array [
       <div
         className="track"
       >
-        <button
-          className="track__button track__button--play"
-          type="button"
-        />
         <div
-          className="track__status"
+          className="game__track"
         >
-          <audio />
+          <button
+            className="track__button track__button--play"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          />
+          <div
+            className="track__status"
+          >
+            <audio
+              controls={false}
+              src="test.mp3"
+            />
+          </div>
         </div>
         <div
           className="game__answer"
@@ -180,14 +207,23 @@ Array [
       <div
         className="track"
       >
-        <button
-          className="track__button track__button--play"
-          type="button"
-        />
         <div
-          className="track__status"
+          className="game__track"
         >
-          <audio />
+          <button
+            className="track__button track__button--play"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          />
+          <div
+            className="track__status"
+          >
+            <audio
+              controls={false}
+              src="test.mp3"
+            />
+          </div>
         </div>
         <div
           className="game__answer"

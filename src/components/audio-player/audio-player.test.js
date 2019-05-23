@@ -1,5 +1,5 @@
-import React         from 'react';
-import renderer      from 'react-test-renderer';
+import React from 'react';
+import renderer from 'react-test-renderer';
 import {AudioPlayer} from "./audio-player.jsx";
 
 function createNodeMock(element) {
@@ -19,6 +19,7 @@ describe(`Audio-player snapshot test`, () => {
     const options = {createNodeMock};
     const tree = renderer.create(<AudioPlayer {...mock}/>, options).toJSON();
     expect(tree).toMatchSnapshot();
-  })
-})
+  });
+});
+
 

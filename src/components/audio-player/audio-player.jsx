@@ -11,7 +11,7 @@ export class AudioPlayer extends PureComponent {
       isPlaying: props.isPlaying,
     };
     this._audioRef = createRef();
-    this._onPlayButtonClick = this._onPlayButtonClick.bind(this);
+    this._handleButtonClick = this._handleButtonClick.bind(this);
   }
 
   componentDidMount() {
@@ -45,7 +45,7 @@ export class AudioPlayer extends PureComponent {
           className={`track__button track__button--${isPlaying ? PlayButtonText.PAUSE : PlayButtonText.PLAY}`}
           type="button"
           disabled={isLoading}
-          onClick={this._onPlayButtonClick}
+          onClick={this._handleButtonClick}
         />
         <div className="track__status">
           <audio
@@ -88,7 +88,7 @@ export class AudioPlayer extends PureComponent {
     audio.src = ``;
   }
 
-  _onPlayButtonClick() {
+  _handleButtonClick() {
     this.props.onPlayButtonClick();
     this.setState({isPlaying: !this.state.isPlaying});
   }

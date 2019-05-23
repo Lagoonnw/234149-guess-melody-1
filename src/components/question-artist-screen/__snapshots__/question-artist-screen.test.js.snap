@@ -86,9 +86,18 @@ Array [
     >
       <button
         className="track__button track__button--play"
+        disabled={true}
+        onClick={[Function]}
         type="button"
       />
-      <audio />
+      <div
+        className="track__status"
+      >
+        <audio
+          controls={false}
+          src="path.mp3"
+        />
+      </div>
     </div>
     <form
       className="game__artist"

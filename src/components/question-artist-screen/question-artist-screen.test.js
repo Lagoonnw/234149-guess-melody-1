@@ -1,6 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import {QuestionArtistScreen} from "./question-artist-screen.jsx";
+import {QuestionArtistScreen} from './question-artist-screen.jsx';
+import {createNodeMock} from '../../__mocks__/create-mock-node';
 
 const mock = {
   question: {
@@ -29,11 +30,12 @@ const mock = {
 describe(`ArtistQuestionScreen render`, () => {
   test(`Should render ArtistQuestionScreen correctly`, () => {
     const {question} = mock;
+    const options = {createNodeMock};
     const tree = renderer.create(
         <QuestionArtistScreen
           onAnswer={jest.fn()}
           question={question}
-        />).toJSON();
+        />, options).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

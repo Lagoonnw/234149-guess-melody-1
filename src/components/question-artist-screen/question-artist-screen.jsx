@@ -1,11 +1,11 @@
 import React, {PureComponent, Fragment} from "react";
-import PropTypes                        from "prop-types";
-import {QuestionType}                   from "../../constants/constants";
-import {GameHeader}                     from "../game-screens-header/game-screens-header.jsx";
-import {AudioPlayer}                    from "../audio-player/audio-player.jsx";
+import PropTypes from "prop-types";
+import {QuestionType} from "../../constants/constants";
+import {GameHeader} from "../game-screens-header/game-screens-header.jsx";
+import {AudioPlayer} from "../audio-player/audio-player.jsx";
 
 export class QuestionArtistScreen extends PureComponent {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       isPlaying: false,
